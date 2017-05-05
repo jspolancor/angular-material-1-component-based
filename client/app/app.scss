@@ -1,0 +1,19 @@
+@import '../styles/variables.scss';
+@import '../styles/containers.scss';
+@import '../styles/fixes.scss';
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700);
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+
+.transparent{
+    background: transparent !important;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.corner-buttons{
+    position: fixed;
+    bottom: 1.5em;
+    right: 1.5em;
+}

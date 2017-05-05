@@ -1,0 +1,50 @@
+/**
+ *
+ * This file generates utility classes for every possible margin and padding
+ *
+ * @author Author name <example@email.com>
+ *
+ */
+
+
+/* Every possible side of a box */
+$borders  : top bottom right left;
+
+/* sizes in em */
+$em-sizes : 0 1 2 3 4 5 6 7 8 9 10;
+
+@each $size in $em-sizes {
+
+    .padding-#{$size} {
+        padding : #{$size}em;
+    }
+    .padding-#{$size}-5 {
+        padding : #{$size + 0.5}em;
+    }
+    .margin-#{$size} {
+        margin : #{$size}em;
+    }
+    .margin-#{$size}-5 {
+        margin : #{$size + 0.5}em;
+    }
+
+	@each $border in $borders {
+
+        .padding-#{$border}-#{$size} {
+            padding-#{$border} : #{$size}em;
+        }
+        .padding-#{$border}-#{$size}-5 {
+            padding-#{$border} : #{$size + 0.5}em;
+        }
+        .margin-#{$border}-#{$size} {
+            margin-#{$border} : #{$size}em;
+        }
+        .margin-#{$border}-#{$size}-5 {
+            margin-#{$border} : #{$size + 0.5}em;
+        }
+
+    }
+        
+}
+
+
