@@ -1,5 +1,7 @@
 # Angular material 1 + webpack + babel + ES6 + sass component based starter project
 
+Version 0.1
+
 The component approach in angular is simple. Basically, removing all the standalone controllers that were bound to views and treating directives as first class citizens. Creating mini application pieces that are self defined and can be used to compose our application. Angular 2 takes this approach as does React, and web components.
 
 The benefits of this approach are plenty. From better organization and collaboration, to easier re-usability and simpler reasoning about your code. The component approach is here to stay.
